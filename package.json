@@ -1,9 +1,9 @@
 {
     "name": "vuevelocidad",
-    "displayName": "VueVelocidad",
+    "publisher": "davidbernegger",
     "description": "Vue Snippets for fast Development",
     "version": "0.0.1",
-    "keywords": ["Vue", "Vue 2", "Vue Snippets", "VueVelocidad"],
+    "keywords": ["Vue", "Vue 2", "Vue 3", "Velocidad", "Vue Snippets", "VueVelocidad"],
     "engines": {
         "vscode": "^1.31.0"
     },
@@ -30,6 +30,14 @@
             },
             {
                 "language": "javascript",
+                "path": "./snippets/vue-script.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/vue-script-vuex.json"
+            },
+            {
+                "language": "typescript",
                 "path": "./snippets/vue-script.json"
             }
         ]
