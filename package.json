@@ -1,11 +1,16 @@
 {
     "name": "vuevelocidad",
     "publisher": "davidbernegger",
-    "description": "Vue Snippets for fast Development",
+    "description": "Vue Snippets for fast and easy development",
     "version": "0.0.1",
     "keywords": ["Vue", "Vue 2", "Vue 3", "Velocidad", "Vue Snippets", "VueVelocidad"],
     "engines": {
         "vscode": "^1.31.0"
+    },
+    "icon": "assets/logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davidbernegger/VueVelocidad.git"
     },
     "categories": [
         "Snippets"
