@@ -2,8 +2,15 @@
     "name": "vuevelocidad",
     "publisher": "davidbernegger",
     "description": "Vue Snippets for fast and easy development",
-    "version": "0.0.1",
-    "keywords": ["Vue", "Vue 2", "Vue 3", "Velocidad", "Vue Snippets", "VueVelocidad"],
+    "version": "0.0.2",
+    "keywords": [
+        "Vue",
+        "Vue 2",
+        "Vue 3",
+        "Velocidad",
+        "Vue Snippets",
+        "VueVelocidad"
+    ],
     "engines": {
         "vscode": "^1.31.0"
     },
