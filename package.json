@@ -1,0 +1,37 @@
+{
+    "name": "vuevelocidad",
+    "displayName": "VueVelocidad",
+    "description": "Vue Snippets for fast Development",
+    "version": "0.0.1",
+    "keywords": ["Vue", "Vue 2", "Vue Snippets", "VueVelocidad"],
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "vue",
+                "path": "./snippets/vue.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/vue-template.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue-template.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/vue-script-vuex.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/vue-script.json"
+            }
+        ]
+    }
+}

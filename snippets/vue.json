@@ -1,0 +1,23 @@
+{
+	"Vue Single File Component": {
+		"prefix": "vbase",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t${0}",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"\texport default {",
+			"\t\t",
+			"\t}",
+			"</script>",
+			"",
+			"<style lang=\"scss\">",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File"
+	}
+}
