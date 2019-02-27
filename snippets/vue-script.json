@@ -81,19 +81,6 @@
 		"}"],
 		"description": "Import one component into another, within export statement"
 	},
-	"Vue Import Export": {
-		"prefix": "vimport-export",
-		"body": [
-			"import ${1:Name} from '@/components/${1:Name}.vue'",
-			"",
-			"export default {",
-			"\tcomponents: {",
-			"\t\t${1:Name}",
-			"\t},",
-			"}"
-		],
-		"description": "import a component and include it in export default"
-	},
 	"Vue Filter": {
 		"prefix": "vfilter",
 		"body": [
@@ -189,7 +176,7 @@
 		"prefix": "vtest",
 		"body": [
 			"import Vue from 'vue'",
-			"import ${1:HelloWorld} from './components/${1:HelloWorld}'",
+			"import ${1:HelloWorld} from '@/components/${1:HelloWorld}'",
 			"",
 			"describe('${1:HelloWorld}.vue', () => {",
 			"\tit('${2:should render correct contents}', () => {",
@@ -201,5 +188,84 @@
 			"})"
 		],
 		"description": "unit test component"
+	},
+	"$nextTick": {
+        "prefix": "vNextTick",
+        "body": [
+            "${1|this,vm|}.\\$nextTick(${2:callback})"
+        ],
+        "description": "vm.$nextTick( callback )"
+	},
+	"Lifecycle: beforeCreate": {
+        "prefix": "vbcreate",
+        "body": [
+            "beforeCreate() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: created": {
+        "prefix": "vcreated",
+        "body": [
+            "created() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: beforeMount": {
+        "prefix": "vbmount",
+        "body": [
+            "beforeMount() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: mounted": {
+        "prefix": "vmounted",
+        "body": [
+            "mounted() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: beforeUpdate": {
+        "prefix": "vbeforeupdate",
+        "body": [
+            "beforeUpdate() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: updated": {
+        "prefix": "vupdated",
+        "body": [
+            "updated() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: beforeDestroy": {
+        "prefix": "vbdestroy",
+        "body": [
+            "beforeDestroy() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
+    },
+    "Lifecycle: destroyed": {
+        "prefix": "vdestroy",
+        "body": [
+            "destroyed() {",
+            "\t$1",
+            "},"
+        ],
+        "description": "Type: Function."
 	}
 }

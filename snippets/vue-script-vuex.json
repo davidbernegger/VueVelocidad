@@ -50,7 +50,7 @@
     },
     "Vue Import Vuex Store": {
       "prefix": "vstore-import",
-      "body": ["import { store } from './store/index';"],
+      "body": ["import { store } from '@/store/index';"],
       "description": "import vuex store into main.js"
     }
 }

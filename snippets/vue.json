@@ -14,7 +14,7 @@
 			"\t}",
 			"</script>",
 			"",
-			"<style lang=\"scss\">",
+			"<style ${1| ,lang=\"scss\"|}>",
 			"",
 			"</style>"
 		],
