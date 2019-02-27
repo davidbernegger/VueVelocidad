@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="vuevelocidad.netlify.com" target="_blank">
-    <img width="180" src="https://vuevelocidad.netlify.com/assets/img/logo.54ee7a1b.png" alt="logo">
+    <img width="180" src="../assets/logo.png" alt="logo">
   </a>
 </p>
 

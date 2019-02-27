@@ -14,7 +14,7 @@
 		"prefix": "vmethod",
 		"body": ["methods: {",
 			"\t${1:name}() {", 
-				"\t\t${0}", 
+				"\t\t${2}", 
 				"\t}", 
 			"},"
 		],
@@ -25,32 +25,32 @@
 		"body": [
 			"computed: {",
 			"\t${1:name}() {",
-			"\t\treturn this.\\${2:data} ${0}",
+			"\t\treturn this.${2:name}",
 			"\t}",
 			"},"
 		],
 		"description": "computed value"
 	},
 	"Vue Watchers": {
-		"prefix": "vwatcher",
+		"prefix": "vwatch",
 		"body": [
 			"watch: {",
 			"\t${1:data}(${2:newValue}, ${3:oldValue}) {",
-			"\t\t${0}",
+			"\t\t${4}",
 			"\t}",
 			"},"
 		],
 		"description": "vue watcher"
 	},
 	"Vue Watchers with Options": {
-		"prefix": "vwatcher-options",
+		"prefix": "vwatch-options",
 		"body": [
 			"watch: {",
 			"\t${1:data}: {",
 			"\t\timmediate: ${2:true},",
 			"\t\tdeep: ${3:true},",
 			"\t\thandler(${4:newValue}, ${5:oldValue}) {",
-			"\t\t\t${0}",
+			"\t\t\t${5}",
 			"\t\t}",
 			"\t}",
 			"},"
@@ -63,7 +63,7 @@
 			"props: {",
 			"\t${1:propName}: {",
 			"\t\ttype: ${2:Number},",
-			"\t\tdefault: ${0}",
+			"\t\tdefault: ${3:Null},",
 			"\t},",
 			"},"
 		],
@@ -85,27 +85,16 @@
 		"prefix": "vfilter",
 		"body": [
 			"filters: {",
-			"\t${1:fnName}: function(${2:value}) {",
-			"\t\treturn ${2:value}${0};",
+			"\t${1:name}(${2:value}) {",
+			"\t\treturn ${2:value};",
 			"\t}",
 		"}"
 		],
 		"description": "vue filter"
 	},
-	"Vue Mixin": {
-		"prefix": "vmixin",
-		"body": [
-			"const ${1:mixinName} = {",
-			"\tmounted() {",
-			"\t\tconsole.log('hello from mixin!')",
-			"\t},",
-			"}"
-		],
-		"description": "vue mixin"
-	},
 	"Vue Use Mixin": {
-		"prefix": "vmixin-use",
-		"body": ["mixins: [${1:mixinName}]"],
+		"prefix": "vmixin",
+		"body": ["mixins: [${1:mixinName}],"],
 		"description": "vue use mixin"
 	},
 	"Vue Custom Directive": {
@@ -162,16 +151,6 @@
 		],
 		"description": "dispatch to vuex store in methods for action"
 	},
-	"Incrementer": {
-		"prefix": "vinc",
-		"body": ["return ${1:this.num} += ${2:1}"],
-		"description": "increment"
-	},
-	"Decrementer": {
-		"prefix": "vdec",
-		"body": ["return ${1:this.num} -= ${2:1}"],
-		"description": "decrement"
-	},
 	"Unit Test": {
 		"prefix": "vtest",
 		"body": [
@@ -192,7 +171,9 @@
 	"$nextTick": {
         "prefix": "vNextTick",
         "body": [
-            "${1|this,vm|}.\\$nextTick(${2:callback})"
+            "${1|this,vm|}.\\$nextTick(() => {",
+			"\t${2}",
+			"})"
         ],
         "description": "vm.$nextTick( callback )"
 	},
@@ -233,7 +214,7 @@
         "description": "Type: Function."
     },
     "Lifecycle: beforeUpdate": {
-        "prefix": "vbeforeupdate",
+        "prefix": "vbupdate",
         "body": [
             "beforeUpdate() {",
             "\t$1",
@@ -260,7 +241,7 @@
         "description": "Type: Function."
     },
     "Lifecycle: destroyed": {
-        "prefix": "vdestroy",
+        "prefix": "vdestroyed",
         "body": [
             "destroyed() {",
             "\t$1",
@@ -279,8 +260,39 @@
 			"\t\t\t}",
 			"\t\t}",
 			"\t}",
-			"};"
+			"}"
 		],
 		"description": "Global Scss Import"
+	},
+	"Map Getters": {
+		"prefix": "vmapgetters",
+		"body":[
+			"...mapGetters({",
+			"\t${1:property}",
+			"}),"
+		],
+		"description": "VueX map getters"
+	},
+	"Map State": {
+		"prefix": "vmapstate",
+		"body":[
+			"...mapState({",
+			"\t${1:property}",
+			"}),"
+		],
+		"description": "VueX map State"
+	},
+	"Personal Function": {
+		"prefix": "vfunction",
+		"body": [
+		   "${1:func}(${2}) => {",
+		   "\t${3}",
+		   "},"
+		],
+		"description": "for everything"
 	}
 }
+
+
+
+  

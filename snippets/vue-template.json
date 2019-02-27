@@ -2,7 +2,7 @@
 	"Vue v-for": {
 		"prefix": "vfor",
 		"body": [
-			"<${1:div} v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\">",
+			"<${1:div} v-for=\"(${2:item}, index) in ${3:items}\" :key=\"index + '${2:item}'\">",
 			"\t{{ ${2:item} }}",
 			"</${1:div}>"
 		],
@@ -10,40 +10,29 @@
 	},
 	"Vue v-model Directive": {
 		"prefix": "vmodel",
-		"body": ["<input v-model=\"${1:data}\" type=\"text\" />"],
+		"body": ["<${1:div} v-model=\"${2:data}\" type=\"text\"/>"],
 		"description": "v-model directive"
-	},
-	"Vue v-model Number Directive": {
-		"prefix": "vmodel-num",
-		"body": [
-			"<input v-model.number=\"${1:numData}\" type=\"number\" step=\"1\" />"
-		],
-	  	"description": "v-model directive number input"
 	},
 	"Vue v-on Shortcut Directive": {
 		"prefix": "von",
 		"body": ["@click=\"${1:handler}(${2:arg}, ${3:event})\""],
 		"description": "v-on click handler with arguments"
 	},
-	"Vue Component with Props Binding": {
-		"prefix": "vel-props",
-		"body": ["<${1:component} :${1:propName}=\"${0}\"></${1:component}>"],
-		"description": "component element with props"
-	},
+
 	"Vue Image Source Binding": {
-		"prefix": "vsrc",
+		"prefix": "vimg",
 		"body": [
-			"<img :src=\"'/path/to/images/' + ${1:fileName}\" alt=\"${2:altText}\"/>"
+			"<img :src=\"${1:fileName}\" alt=\"${2:altText}\"/>"
 		],
 		"description": "image source binding"
 	},
 	"Vue Style Binding": {
 		"prefix": "vstyle",
-		"body": ["<${1:div} :style=\"{ fontSize: ${2:data} + 'px' }\"></${1:div}>"],
+		"body": ["<${1:div} :style=\"{ ${2:property}: ${3:value} }\"></${1:div}>"],
 		"description": "vue inline style binding"
 	},
 	"Vue Style Binding Object": {
-		"prefix": "vstyle-obj",
+		"prefix": "vstyle-arr",
 		"body": [
 			"<${1:div} :style=\"[${2:styleObjectA}, ${3:styleObjectB]}\"></${1:div}>"
 		],
@@ -55,18 +44,11 @@
 		"description": "vue class binding"
 	},
 	"Vue Class Binding Object": {
-		"prefix": "vclass-obj",
+		"prefix": "vclass-arr",
 		"body": [
 			"<${1:div} :class=\"[${2:classNameA}, ${3:classNameB}]\"></${1:div}>"
 		],
 	  "description": "vue class binding"
-	},
-	"Vue Multiple Conditional Class Bindings": {
-		"prefix": "vclass-obj-mult",
-		"body": [
-			"<${1:div} :class=\"[${2:classNameA}, {${3:classNameB} : ${4:condition}}]\"></${1:div}>"
-		],
-		"description": "vue multiple conditional class bindings"
 	},
 	"Vue Transition Component with JavaScript Hooks": {
 		"prefix": "vanim",
@@ -84,9 +66,4 @@
 		],
 		"description": "transition component js hooks"
 	},
-	"Vue Nuxt Routing Link": {
-		"prefix": "vnuxtl",
-		"body": ["<nuxt-link to=\"/${1:page}\">${1:page}</nuxt-link>"],
-		"description": "nuxt routing link"
-	}
 }
