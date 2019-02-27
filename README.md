@@ -16,6 +16,12 @@ Either click [this link](vscode:extension/davidBernegger.vuevelocidad) or instal
 code --install-extension davidbernegger.vuevelocidad
 ```
 
+<p align="center">
+  <a href="vuevelocidad.netlify.com" target="_blank">
+    <img src="https://vuevelocidad.netlify.com/assets/img/example.e6404c44.gif" alt="example">
+  </a>
+</p>
+
 ## Snippets
 
 ### Data
