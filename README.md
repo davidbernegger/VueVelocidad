@@ -3,7 +3,7 @@
 <p align="center">
   <a href="vuevelocidad.netlify.com" target="_blank">
     <img width="180" src="https://vuevelocidad.netlify.com/assets/img/logo.54ee7a1b.png" alt="logo">
-  </a>
+  </a> 
 </p>
 
 Vue Velocidad is a very opinionated Vue VsCode snippet extension, which modifies and updates [vue-vscode-snippets](https://github.com/sdras/vue-vscode-snippets), best used with Vue-Cli 3.
