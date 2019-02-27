@@ -267,5 +267,20 @@
             "},"
         ],
         "description": "Type: Function."
+	},
+	"Global SCSS Import": {
+		"prefix": "vscss",
+		"body":[
+			"module.exports = {",
+			"\tcss: {",
+			"\t\tloaderOptions: {",
+			"\t\t\tsass: {",
+			"\t\t\t\tdata: `@import '${1:@/styles/main.scss}';`",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"};"
+		],
+		"description": "Global Scss Import"
 	}
 }
