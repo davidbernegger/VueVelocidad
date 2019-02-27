@@ -16,35 +16,35 @@
       "description": "Base for Vuex store"
     },
     "Vuex Getters": {
-      "prefix": "vgetter",
+      "prefix": "vgetters",
       "body": [
         "getters: {",
         "\t${1:value}: state => {",
         "\t\treturn state.${1:value};",
         "\t}",
-        "}"
+        "},"
       ],
       "description": "vuex getter"
     },
     "Vuex Mutation": {
-      "prefix": "vmutation",
+      "prefix": "vmutations",
       "body": [
         "mutations: {",
         "\t${1:updateValue}(state, ${3:payload}) {",
         "\t\tstate.${2:value} = ${3:payload};",
         "\t}",
-        "}"
+        "},"
       ],
       "description": "vuex mutation"
     },
     "Vuex Action": {
-      "prefix": "vaction",
+      "prefix": "vactions",
       "body": [
         "actions: {",
         "\t${1:updateValue}({commit}, ${2:payload}) {",
         "\t\tcommit('${1:updateValue}', ${2:payload});",
         "\t}",
-        "}"
+        "},"
       ],
       "description": "vuex action"
     },

@@ -4,18 +4,18 @@
 		"body": [
 			"<template>",
 			"\t<div>",
-			"\t\t${0}",
+			"\t\t${1}",
 			"\t</div>",
 			"</template>",
 			"",
 			"<script>",
 			"\texport default {",
-			"\t\t",
+			"\t\t${2}",
 			"\t}",
 			"</script>",
 			"",
-			"<style ${1| ,lang=\"scss\"|}>",
-			"",
+			"<style>",
+			"${3}",
 			"</style>"
 		],
 		"description": "Base for Vue File"

@@ -1,8 +1,8 @@
 {
     "name": "vuevelocidad",
     "publisher": "davidbernegger",
-    "description": "Vue Snippets for fast and easy development",
-    "version": "0.0.2",
+    "description": "Vue Velocidad - Vue Snippets for fast and easy development",
+    "version": "0.1.1",
     "keywords": [
         "Vue",
         "Vue 2",
@@ -53,5 +53,12 @@
                 "path": "./snippets/vue-script.json"
             }
         ]
+    },
+    "devDependencies": {
+        "vuepress": "^1.0.0-alpha.40"
+    },
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
     }
 }
