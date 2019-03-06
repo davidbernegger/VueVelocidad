@@ -285,7 +285,7 @@
 	"Personal Function": {
 		"prefix": "vfunction",
 		"body": [
-		   "${1:func}(${2}) => {",
+		   "${1:func}(${2}) {",
 		   "\t${3}",
 		   "},"
 		],

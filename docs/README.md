@@ -1,7 +1,7 @@
 # Vue Velocidad
 
 <p align="center">
-  <a href="vuevelocidad.netlify.com" target="_blank">
+  <a href="https://vuevelocidad.netlify.com" target="_blank">
     <img width="180" src="../assets/logo.png" alt="logo">
   </a>
 </p>
@@ -17,7 +17,7 @@ code --install-extension davidbernegger.vuevelocidad
 ```
 
 <p align="center">
-  <a href="vuevelocidad.netlify.com" target="_blank">
+  <a href="https://vuevelocidad.netlify.com" target="_blank">
     <img src="../assets/example.gif" alt="example">
   </a>
 </p>

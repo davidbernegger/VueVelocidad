@@ -1,7 +1,7 @@
 # Vue Velocidad
 
 <p align="center">
-  <a href="vuevelocidad.netlify.com" target="_blank">
+  <a href="https://vuevelocidad.netlify.com" target="_blank">
     <img width="180" src="https://vuevelocidad.netlify.com/assets/img/logo.54ee7a1b.png" alt="logo">
   </a> 
 </p>
@@ -10,14 +10,14 @@ Vue Velocidad is a very opinionated Vue VsCode snippet extension, which modifies
 
 ## Install
 
-Either click [this link](vscode:extension/davidBernegger.vuevelocidad) or install it from the commandline
+Either click [this link](https://marketplace.visualstudio.com/items?itemName=davidbernegger.vuevelocidad) or install it from the commandline
 
 ```batch
 code --install-extension davidbernegger.vuevelocidad
 ```
 
 <p align="center">
-  <a href="vuevelocidad.netlify.com" target="_blank">
+  <a href="https://vuevelocidad.netlify.com" target="_blank">
     <img src="https://vuevelocidad.netlify.com/assets/img/example.e6404c44.gif" alt="example">
   </a>
 </p>
